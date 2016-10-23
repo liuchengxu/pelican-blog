@@ -1,42 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-        <meta charset="utf-8" />
-        <title>Linear Regression</title>
-        <link rel="stylesheet" href="https://liuchengxu.github.io/pelican-blog/theme/css/main.css" />
+    <title>Linear Regression - Focus on ML & DM</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+
+
+<link rel="canonical" href="./first-post.html">
+
+        <meta name="author" content="Liucheng Xu" />
+        <meta name="keywords" content="Machine Learning" />
+        <meta name="description" content="" />
+
+        <meta property="og:site_name" content="Focus on ML & DM" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Linear Regression"/>
+        <meta property="og:url" content="./first-post.html"/>
+        <meta property="og:description" content=""/>
+        <meta property="article:published_time" content="2016-10-28" />
+            <meta property="article:section" content="posts" />
+            <meta property="article:tag" content="Machine Learning" />
+            <meta property="article:author" content="Liucheng Xu" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="./theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="./theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="./theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
+
+
+
+
+
 </head>
+<body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="https://liuchengxu.github.io/pelican-blog/">Focus on ML & DM </a></h1>
-                <nav><ul>
-                    <li class="active"><a href="https://liuchengxu.github.io/pelican-blog/category/posts.html">posts</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="https://liuchengxu.github.io/pelican-blog/first-post.html" rel="bookmark"
-           title="Permalink to Linear Regression">Linear Regression</a></h1>
-    </header>
-
-    <div class="entry-content">
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="./" class="navbar-brand">
+Focus on ML & DM            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="./category/general.html">General</a>
+                        </li>
+                        <li class="active">
+                            <a href="./category/posts.html">Posts</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="./first-post.html"
+                       rel="bookmark"
+                       title="Permalink to Linear Regression">
+                        Linear Regression
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
 <footer class="post-info">
-        <abbr class="published" title="2016-10-28T20:00:00+02:00">
-                Published: 五 28 十月 2016
-        </abbr>
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2016-10-28T20:00:00+00:00"> 五 28 十月 2016</time>
+    </span>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://liuchengxu.github.io/pelican-blog/author/liucheng-xu.html">Liucheng Xu</a>
-        </address>
-<p>In <a href="https://liuchengxu.github.io/pelican-blog/category/posts.html">posts</a>.</p>
-<p>tags: <a href="https://liuchengxu.github.io/pelican-blog/tag/machine-learning.html">Machine Learning</a> </p>
-</footer><!-- /.post-info -->      <style type="text/css">/*!
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="./tag/machine-learning.html">Machine Learning</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <style type="text/css">/*!
 *
 * IPython notebook
 *
@@ -1194,35 +1259,68 @@ mkEAAAAASUVORK5CYII=
 }
 </script>
 
-    </div><!-- /.entry-content -->
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
 
-  </article>
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+              <ul class="list-group" id="social">
+                <li class="list-group-item"><a href="https://github.com/liuchengxu"><i class="fa fa-github-square fa-lg"></i> GitHub</a></li>
+                <li class="list-group-item"><a href="https://github.com/liuchengxu/pelican-blog"><i class="fa fa-pelican-blog-square fa-lg"></i> Pelican Blog</a></li>
+              </ul>
+            </li>
+
+
+
+
+
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://liuchengxu.github.io/" target="_blank">
+                Homepage
+            </a>
+        </li>
+      </ul>
+    </li>
+    </ul>
 </section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="https://liuchengxu.github.io/">Blog</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2016 Liucheng Xu
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="./theme/js/jquery.min.js"></script>
 
-                            <li><a href="https://github.com/liuchengxu">GitHub</a></li>
-                            <li><a href="https://github.com/liuchengxu/pelican-blog">Pelican Blog</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./theme/js/bootstrap.min.js"></script>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="./theme/js/respond.min.js"></script>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
 
 </body>
 </html>
