@@ -5,10 +5,12 @@ from __future__ import unicode_literals
 AUTHOR = 'Liucheng Xu'
 SITENAME = 'Focus on ML & DM'
 SITEURL = 'https://liuchengxu.github.io/pelican-blog'
+#  GITHUB_URL = 'https://github.com/liuchengxu'
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Paris'
+STATIC_PATHS = ['images', 'notebooks', 'downloads']
+NOTEBOOK_DIR = 'notebooks'
 
 DEFAULT_LANG = 'en'
 
@@ -21,20 +23,20 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+         ('Homepage', 'https://liuchengxu.github.io/'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('GitHub', 'https://github.com/liuchengxu'),
+          ('Pelican Blog', 'https://github.com/liuchengxu/pelican-blog'),)
 
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 MARKUP = ('md', 'ipynb')
 
 PLUGIN_PATHS = [ './plugins' ]  # 如果像原文直接PLUGIN_PATH = `./plugins`而不使用列表会报warning
 PLUGINS = ['ipynb.markup']
+
+THEME = "theme/bootstrap3"
