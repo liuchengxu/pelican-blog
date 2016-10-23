@@ -7,9 +7,11 @@ SITENAME = 'Focus on ML & DM'
 SITEURL = 'https://liuchengxu.github.io/pelican-blog'
 #  GITHUB_URL = 'https://github.com/liuchengxu'
 
+TIMEZONE = 'Asia/Shanghai'
+
 PATH = 'content'
 
-STATIC_PATHS = ['images', 'notebooks', 'downloads']
+STATIC_PATHS = ['images', 'notebooks']
 NOTEBOOK_DIR = 'notebooks'
 
 DEFAULT_LANG = 'en'
@@ -32,7 +34,7 @@ SOCIAL = (('GitHub', 'https://github.com/liuchengxu'),
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+#  RELATIVE_URLS = True
 
 MARKUP = ('md', 'ipynb')
 
