@@ -78,6 +78,11 @@ a, a:hover {
     color: inherit;
 }
 
+a:hover {
+    background-color: #e3e3e3;
+    cursor: crosshair;
+}
+
 .entry-content a {
     text-decoration: none;
     border-bottom: 1px dotted;

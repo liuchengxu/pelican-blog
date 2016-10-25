@@ -185,7 +185,9 @@
                 {% include 'includes/aboutme.html' %}
             {% endif %}
             {% if not HIDE_SIDEBAR %}
-                {% include 'includes/sidebar.html' %}
+                <!-- {% include 'includes/sidebar.html' %} -->
+                <!-- instead of sidebar with github-card -->
+                {% include 'includes/github-card.html' %}
             {% endif %}
             </aside>
         </div>
